@@ -1,0 +1,15 @@
+FROM python:3.11-slim
+
+# Install necessary dependencies
+RUN apt-get update && apt-get install -y curl
+RUN curl -fsSL https://ollama.com/install.sh | sh
+
+# Copy app files into the container
+COPY app/ /app/
+WORKDIR /app
+
+# Install Python dependencies
+RUN pip install flask requests
+
+# Run the application
+CMD ["/bin/bash", "/app/start.sh"]
