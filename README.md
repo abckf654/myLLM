@@ -10,6 +10,9 @@ This repository contains a Docker setup for deploying the Deepseek model along w
 ## Installation
 
 1. Clone the repository or download the code.
-2. Run the installation script:
+    ```bash
+   git clone https://github.com/abckf654/myLLM.git && cd myLLM && ./install_mac.sh
+
+3. Run the installation script:
    ```bash
    ./install_mac.sh
