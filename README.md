@@ -13,6 +13,8 @@ This repository contains a Docker setup for deploying the Deepseek model along w
     ```bash
    git clone https://github.com/abckf654/myLLM.git && cd myLLM && ./install_mac.sh
 
-3. Run the installation script:
+2. Run the installation script:
    ```bash
    ./install_mac.sh
+
+   When prompted, choose the port for the Flask web UI (default: 5000).
